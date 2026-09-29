@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Warm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .language-switch {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .language-switch button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .language-switch button.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        .language-switch button:hover {
+            background: #ecf0f1;
+        }
+        .language-switch button.active:hover {
+            background: #2980b9;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        .last-updated {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        .contact {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .contact p {
+            margin-bottom: 5px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button class="active" onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('zh')">中文</button>
+        </div>
+
+        <!-- English Version -->
+        <div id="en-content" class="lang-content active">
+            <h1>Privacy Policy for Warm</h1>
+            <p class="last-updated"><strong>Last updated:</strong> September 28, 2026</p>
+
+            <p>This Privacy Policy describes how <strong>Warm</strong> ("we", "our", or "us") handles information when you use our mobile application, <strong>Warm</strong> (the "App"). We built the App around a single principle: <span class="highlight">your call history and relationships belong to you alone</span>.</p>
+
+            <p>Please read this Privacy Policy carefully. If you do not agree with its terms, please do not use the App.</p>
+
+            <h2>1. Information We Collect</h2>
+            <p>Warm <strong>does not collect, transmit, or store any personal information on our servers</strong>.</p>
+
+            <p>The only information the App accesses is:</p>
+            <ul>
+                <li><strong>Your device call log</strong> — accessed locally through the <code>READ_CALL_LOG</code> Android permission. The App reads call records such as phone numbers, call duration, call type (incoming/outgoing/missed), and timestamps solely for on-device analysis.</li>
+                <li><strong>Your local analysis results</strong> — derived metrics such as contact frequency, relationship scores, and relationship tags, computed and stored locally on your device.</li>
+                <li><strong>Optional user labels</strong> — if you manually mark a contact's relationship type (e.g., Family, Friend, Work), this preference is saved locally.</li>
+            </ul>
+
+            <p>We do <strong>not</strong> request access to your contacts, microphone, camera, location, or network state. We do <strong>not</strong> collect device identifiers, advertising IDs, or usage analytics.</p>
+
+            <h2>2. How We Use Information</h2>
+            <p>All processing happens <strong>locally on your device</strong>. We use the call log data solely to:</p>
+            <ul>
+                <li>Calculate relationship metrics (e.g., persistence score, contact frequency, reciprocity).</li>
+                <li>Generate relationship statuses and insights displayed inside the App.</li>
+                <li>Help you understand your communication patterns and identify relationships that may need attention.</li>
+            </ul>
+
+            <p>We do <strong>not</strong>:</p>
+            <ul>
+                <li>Upload your call logs to any server.</li>
+                <li>Use your data for advertising or profiling.</li>
+                <li>Share your data with third parties.</li>
+                <li>Process your data in the background without your interaction.</li>
+            </ul>
+
+            <h2>3. Data Storage and Security</h2>
+            <ul>
+                <li><strong>Local storage only</strong>: Analysis results and user preferences are stored in the App's private directory and Room database on your device.</li>
+                <li><strong>No cloud storage</strong>: We do not use cloud databases, backup services, or remote analytics platforms.</li>
+                <li><strong>No network access</strong>: The App does not request the <code>INTERNET</code> permission. It cannot send data off your device.</li>
+                <li><strong>Security</strong>: Data is protected by Android's application sandbox. Other apps cannot access Warm's private files without root access to your device.</li>
+            </ul>
+
+            <h2>4. Data Retention and Deletion</h2>
+            <ul>
+                <li><strong>Retention period</strong>: Data is retained only as long as the App is installed on your device. It is automatically removed when you uninstall the App.</li>
+                <li><strong>User deletion</strong>: You can permanently delete all locally stored analysis data at any time from <strong>Settings > Clear all data</strong> inside the App.</li>
+                <li><strong>Uninstall</strong>: Uninstalling the App removes all databases, analysis files, and user preferences from your device.</li>
+            </ul>
+
+            <h2>5. Permissions</h2>
+            <p>The App requests the following permission:</p>
+            <ul>
+                <li><strong><code>READ_CALL_LOG</code></strong>: Required to read your call history for local relationship analysis. This permission is used only for this purpose. Without it, the App cannot perform its core analysis, although an optional manual CSV import path is provided as a fallback.</li>
+            </ul>
+
+            <p>You can revoke this permission at any time through your device settings (<strong>Settings > Apps > Warm > Permissions</strong>). Revoking the permission will prevent the App from reading new call logs and refreshing analyses, but previously computed local results remain on your device until you delete them or uninstall the App.</p>
+
+            <h2>6. Third-Party Services</h2>
+            <p>Warm does <strong>not</strong> integrate with any third-party analytics, advertising, crash reporting, authentication, or cloud services. No data is shared with Google, Facebook, analytics providers, advertisers, or any other external party.</p>
+
+            <h2>7. Children's Privacy</h2>
+            <p>The App is not intended for use by children under the age of 13. We do not knowingly collect any information from children. If you believe a child under 13 has used the App, please contact us and we will assist with removing any locally stored data.</p>
+
+            <h2>8. Your Rights</h2>
+            <p>Because all data is processed and stored locally on your device, you maintain full control over it. Depending on your jurisdiction, you may have the right to:</p>
+            <ul>
+                <li><strong>Access</strong> your locally stored analysis results through the App interface.</li>
+                <li><strong>Export</strong> your data where the App provides an export feature.</li>
+                <li><strong>Delete</strong> all data via the in-app "Clear all data" option or by uninstalling the App.</li>
+                <li><strong>Withdraw consent</strong> by revoking the <code>READ_CALL_LOG</code> permission in system settings.</li>
+            </ul>
+
+            <p>We do not hold copies of your data, so we cannot access, modify, or delete it on your behalf.</p>
+
+            <h2>9. International Users</h2>
+            <p>The App is designed to operate entirely offline. Because no personal data leaves your device, cross-border data transfers do not occur.</p>
+
+            <h2>10. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in the App or legal requirements. Any updates will be posted within the App under <strong>Settings > Privacy Policy</strong> and will take effect immediately upon posting. We encourage you to review this page periodically.</p>
+
+            <h2>11. Contact Us</h2>
+            <div class="contact">
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us through the Google Play Store listing or via the contact information provided in the App Store listing.</p>
+            </div>
+
+            <div class="footer">
+                <p><em>This Privacy Policy is written in plain language to accurately reflect how Warm processes your information. All data processing is performed on your device; we do not operate backend servers for this App.</em></p>
+            </div>
+        </div>
+
+        <!-- Chinese Version -->
+        <div id="zh-content" class="lang-content">
+            <h1>温暖隐私政策</h1>
+            <p class="last-updated"><strong>最后更新：</strong>2026年9月28日</p>
+
+            <p>本隐私政策描述<strong>温暖</strong>（"我们"）如何处理您使用我们的移动应用程序<strong>温暖</strong>（"本应用"）时的信息。我们构建本应用的核心原则是：<span class="highlight">您的通话历史和人际关系完全属于您自己</span>。</p>
+
+            <p>请仔细阅读本隐私政策。如果您不同意其条款，请不要使用本应用。</p>
+
+            <h2>1. 我们收集的信息</h2>
+            <p>温暖<strong>不会在我们的服务器上收集、传输或存储任何个人信息</strong>。</p>
+
+            <p>本应用访问的唯一信息是：</p>
+            <ul>
+                <li><strong>您的设备通话记录</strong> — 通过 Android 的 <code>READ_CALL_LOG</code> 权限在本地访问。本应用读取通话记录（如电话号码、通话时长、通话类型（来电/去电/未接）和时间戳），仅用于设备本地分析。</li>
+                <li><strong>您的本地分析结果</strong> — 衍生指标，如联系人频率、关系分数和关系标签，在您的设备上计算和存储。</li>
+                <li><strong>可选的用户标签</strong> — 如果您手动标记联系人的关系类型（如家人、朋友、工作），此偏好设置会保存在本地。</li>
+            </ul>
+
+            <p>我们<strong>不会</strong>请求访问您的联系人、麦克风、相机、位置或网络状态。我们<strong>不会</strong>收集设备标识符、广告 ID 或使用分析数据。</p>
+
+            <h2>2. 我们如何使用信息</h2>
+            <p>所有处理都在<strong>您的设备本地</strong>进行。我们仅将通话记录数据用于：</p>
+            <ul>
+                <li>计算关系指标（如持续概率、联系人频率、互惠性）。</li>
+                <li>生成应用内显示的关系状态和洞察。</li>
+                <li>帮助您了解您的沟通模式，并识别可能需要关注的关系。</li>
+            </ul>
+
+            <p>我们<strong>不会</strong>：</p>
+            <ul>
+                <li>将您的通话记录上传到任何服务器。</li>
+                <li>将您的数据用于广告或用户画像。</li>
+                <li>与第三方共享您的数据。</li>
+                <li>在未经您交互的情况下在后台处理您的数据。</li>
+            </ul>
+
+            <h2>3. 数据存储和安全</h2>
+            <ul>
+                <li><strong>仅本地存储</strong>：分析结果和用户偏好设置存储在您设备上的应用私有目录和 Room 数据库中。</li>
+                <li><strong>无云存储</strong>：我们不使用云数据库、备份服务或远程分析平台。</li>
+                <li><strong>无网络访问</strong>：本应用不请求 <code>INTERNET</code> 权限。它无法将数据发送到您的设备之外。</li>
+                <li><strong>安全性</strong>：数据受 Android 应用沙箱保护。未经对您设备的 root 访问，其他应用无法访问温暖的私有文件。</li>
+            </ul>
+
+            <h2>4. 数据保留和删除</h2>
+            <ul>
+                <li><strong>保留期限</strong>：数据仅在您的设备上安装本应用期间保留。卸载本应用时会自动删除。</li>
+                <li><strong>用户删除</strong>：您可以随时在应用内的<strong>设置 > 清除所有数据</strong>中永久删除所有本地存储的分析数据。</li>
+                <li><strong>卸载</strong>：卸载本应用会从您的设备中删除所有数据库、分析文件和用户偏好设置。</li>
+            </ul>
+
+            <h2>5. 权限</h2>
+            <p>本应用请求以下权限：</p>
+            <ul>
+                <li><strong><code>READ_CALL_LOG</code></strong>：读取您的通话历史以进行本地人际关系分析。此权限仅用于此目的。没有它，本应用无法执行其核心分析，但提供了可选的手动 CSV 导入路径作为后备方案。</li>
+            </ul>
+
+            <p>您可以随时通过设备设置（<strong>设置 > 应用 > 温暖 > 权限</strong>）撤销此权限。撤销权限将阻止本应用读取新的通话记录和刷新分析，但之前计算的本地结果会保留在您的设备上，直到您删除它们或卸载本应用。</p>
+
+            <h2>6. 第三方服务</h2>
+            <p>温暖<strong>不</strong>与任何第三方分析、广告、崩溃报告、身份验证或云服务集成。不与 Google、Facebook、分析提供商、广告商或任何其他外部方共享数据。</p>
+
+            <h2>7. 儿童隐私</h2>
+            <p>本应用不供 13 岁以下的儿童使用。我们不会故意收集任何来自儿童的信息。如果您认为 13 岁以下的儿童使用了本应用，请联系我们，我们将协助删除任何本地存储的数据。</p>
+
+            <h2>8. 您的权利</h2>
+            <p>由于所有数据都在您的设备本地处理和存储，您完全控制它。根据您的司法管辖区，您可能有权：</p>
+            <ul>
+                <li><strong>访问</strong>您本地存储的分析结果（通过应用界面）。</li>
+                <li><strong>导出</strong>您的数据（在应用提供导出功能的情况下）。</li>
+                <li><strong>删除</strong>所有数据（通过应用内的"清除所有数据"选项或卸载本应用）。</li>
+                <li><strong>撤销同意</strong>（通过在系统设置中撤销 <code>READ_CALL_LOG</code> 权限）。</li>
+            </ul>
+
+            <p>我们不持有您的数据副本，因此我们无法代表您访问、修改或删除它。</p>
+
+            <h2>9. 国际用户</h2>
+            <p>本应用设计为完全离线运行。由于个人数据不会离开您的设备，因此不会发生跨境数据传输。</p>
+
+            <h2>10. 本隐私政策的变更</h2>
+            <p>我们可能会不时更新本隐私政策，以反映本应用或法律要求的变化。任何更新都会发布在应用内的<strong>设置 > 隐私政策</strong>下，并在发布后立即生效。我们鼓励您定期查看此页面。</p>
+
+            <h2>11. 联系我们</h2>
+            <div class="contact">
+                <p>如果您对本隐私政策或我们的隐私实践有任何疑问、疑虑或请求，请通过 Google Play 商店列表或应用商店列表中提供的联系信息与我们联系。</p>
+            </div>
+
+            <div class="footer">
+                <p><em>本隐私政策以通俗易懂的语言编写，准确反映温暖如何处理您的信息。所有数据处理都在您的设备上进行；我们不为此应用运营后端服务器。</em></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.language-switch button').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected language
+            document.getElementById(lang + '-content').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
